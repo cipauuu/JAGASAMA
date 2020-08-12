@@ -1,0 +1,55 @@
+.o{
+    font-family: 'Oswald', sans-serif;
+}
+
+.os{
+    font-family: 'Open Sans', sans-serif;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.f-14{
+    font-size: 14px;
+}
+
+.f-18{
+    font-size: 18px;
+}
+
+.f-20{
+    font-size: 20px;
+}
+
+.f-21{
+    font-size: 21px;
+}
+
+.f-24{
+    font-size: 24px;
+}
+
+.f-36{
+    font-size: 36px;
+}
+
+.navbar-brand img{
+    max-height: 30px;
+    margin-left: 75px;
+}
+
+.navbar .navbar-nav li{
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navbar .navbar-nav li:hover{
+    background: yellow;
+}
+
+.carousel img{
+    max-height: 530px;
+}
