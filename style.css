@@ -12,6 +12,9 @@ a:hover{
 
 .f-14{
     font-size: 14px;
+    font-weight: 300;
+    color: #565a60;
+    line-height: 21px;
 }
 
 .f-18{
@@ -39,15 +42,25 @@ a:hover{
     margin-left: 75px;
 }
 
-.navbar .navbar-nav li{
-    padding-top: 35px;
-    padding-bottom: 35px;
-    padding-left: 10px;
-    padding-right: 10px;
+.navbar .collapse{
+    padding-right: 80px;
 }
 
-.navbar .navbar-nav li:hover{
-    background: yellow;
+.navbar .navbar-nav a{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px!important;
+    padding-right: 20px!important;
+    background: #FFEA02;
+    opacity: 0;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar .navbar-nav a:hover{
+    opacity: 1;
 }
 
 .carousel img{
