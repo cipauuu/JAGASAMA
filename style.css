@@ -13,7 +13,6 @@ a:hover {
 .f-14 {
     font-size: 14px;
     font-weight: 300;
-    color: #565a60;
     line-height: 21px;
 }
 
@@ -39,6 +38,8 @@ a:hover {
 
 .f-24 {
     font-size: 24px;
+    font-weight: 300;
+    line-height: 32px;
 }
 
 .f-36 {
@@ -62,6 +63,7 @@ a:hover {
 }
 
 .navbar .navbar-nav a {
+    color: #565a60;
     padding-top: 40px;
     padding-bottom: 40px;
     padding-left: 20px !important;
@@ -177,4 +179,22 @@ a:hover {
 
 .keunggulan{
     color: #7e8082;
+}
+
+footer{
+    color: #e3e3e3!important;
+    background: #636A71;
+}
+
+footer .fa-2{
+    font-size: 2em;
+    margin-bottom: 1vw;
+}
+
+.bawah{
+    background: #27282A;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 22px;
+    color: #868787;
 }
