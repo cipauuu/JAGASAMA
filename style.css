@@ -55,11 +55,11 @@ a:hover {
 
 .navbar-brand img {
     max-height: 30px;
-    margin-left: 75px;
+    margin-left: 7.7vw;
 }
 
 .navbar .collapse {
-    padding-right: 75px;
+    padding-right: 103px;
 }
 
 .navbar .navbar-nav a {
@@ -87,10 +87,9 @@ a:hover {
     padding: 24px;
     margin: 0;
     display: inline-block;
-    z-index: 3 !important;
 }
 
-.judul-kuning:before {
+.judul-kuning::before {
     background: #FFF5A2;
     content: "";
     position: absolute;
@@ -101,7 +100,7 @@ a:hover {
     z-index: -2 !important;
 }
 
-.judul-kuning:after {
+.judul-kuning::after {
     background: white;
     content: "";
     position: absolute;
@@ -112,7 +111,7 @@ a:hover {
     z-index: -1 !important;
 }
 
-.judul-kuning h2:before {
+.judul-kuning h2::before {
     background: black;
     border-top: 4px solid #dfdfdf;
     content: "";
@@ -146,25 +145,26 @@ a:hover {
     color: white;
 }
 
-.produk .hitam{
-    background :black;
+.produk .hitam {
+    background: black;
     padding: 10px;
-    width:100%;
-    height:100%;;
+    width: 100%;
+    height: 100%;
+    ;
 }
 
-.produk img{
+.produk img {
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
 
-.produk img:hover{
+.produk img:hover {
     opacity: 0.4;
 }
 
-.produk .judul-produk{
+.produk .judul-produk {
     bottom: 0;
     position: absolute;
     color: #6f6f73;
@@ -173,32 +173,105 @@ a:hover {
     background: white;
 }
 
-.produk .judul-produk:hover{
+.produk .judul-produk:hover {
     color: #deae2e;
 }
 
-.keunggulan{
+.keunggulan {
     color: #7e8082;
 }
 
-footer{
-    color: #e3e3e3!important;
+footer {
+    color: #e3e3e3 !important;
     background: #636A71;
 }
 
-footer .fa-2{
+footer .fa-2 {
     font-size: 2em;
     margin-bottom: 1vw;
 }
 
-.bawah{
+.bawah {
     background: #27282A;
 }
 
-.bawah a{
+.bawah a {
     background: #27282A;
     font-size: 18px;
     font-weight: 300;
     line-height: 22px;
     color: #868787;
+}
+
+.paginationnn{
+    background: #FFF5A2;
+}
+
+.paginationn h2 {
+    font-size: 28px;
+    font-weight: 300;
+    color: #414146;
+    background: #ffea00;
+    padding: 24px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.sub-paginationn {
+    float: right;
+    top: -60px;
+    position: relative;
+    width: auto!important;
+    padding: 20px;
+    color: #6f6f73;
+    background: white;
+}
+
+.sub-paginationn a{
+    color: black;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.sub-paginationn a:hover{
+    color: #DEAF30;
+}
+
+.intro {
+    line-height: 52px;
+    font-size: 40px;
+    background-image: url(img/intro.jpg) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.intro .container-fluid{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: rgba(255,234,0,0.73);
+}
+
+.intro b{
+    display: block;
+}
+
+.btn-hargaproduk {
+    color: white;
+    background: #ff5722;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-hargaproduk:hover {
+    background: #4B4E53;
+    color: white;
 }
