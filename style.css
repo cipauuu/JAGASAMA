@@ -23,6 +23,9 @@ a:hover {
 
 .f-20 {
     font-size: 20px;
+    font-weight: 300;
+    color: #4b4e53;
+    line-height: 42px;
 }
 
 .f-21 {
@@ -75,21 +78,48 @@ a:hover {
     max-height: 530px;
 }
 
-.judul-kuning h2{
+.judul-kuning h2 {
     background: #ffea00;
     padding: 24px;
     margin: 0;
     display: inline-block;
-    z-index: 3!important;
+    z-index: 3 !important;
 }
 
 .judul-kuning:before {
-    background: rgba(255,234,0,.5);
-    height: 100%!improtant;
-    content: "asdasdasdasdasdasdsa";
+    background: #FFF5A2;
+    content: "";
     position: absolute;
-    height: auto;
+    display: block;
+    width: 30%;
+    height: 10%;
+    left: 0%;
+    z-index: -2 !important;
+}
+
+.judul-kuning:after {
+    background: white;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30%;
+    height: 4%;
+    left: 0%;
+    z-index: -1 !important;
+}
+
+.judul-kuning h2:before {
+    background: black;
+    border-top: 5px solid #dfdfdf;
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0%;
     width: 100%;
-    left: 0;
-    z-index: 1!important;
+    margin-top: 10px;
+    z-index: -3 !important;
+}
+
+.bg-abu{
+    background: #EBECED;
 }
