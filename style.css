@@ -1,68 +1,95 @@
-.o{
+.o {
     font-family: 'Oswald', sans-serif;
 }
 
-.os{
+.os {
     font-family: 'Open Sans', sans-serif;
 }
 
-a:hover{
+a:hover {
     text-decoration: none;
 }
 
-.f-14{
+.f-14 {
     font-size: 14px;
     font-weight: 300;
     color: #565a60;
     line-height: 21px;
 }
 
-.f-18{
+.f-18 {
     font-size: 18px;
 }
 
-.f-20{
+.f-20 {
     font-size: 20px;
 }
 
-.f-21{
+.f-21 {
     font-size: 21px;
+    font-weight: 300;
+    color: #414146;
+    line-height: 21px;
 }
 
-.f-24{
+.f-24 {
     font-size: 24px;
 }
 
-.f-36{
+.f-36 {
     font-size: 36px;
+    font-weight: 300;
+    color: #4b4e53;
+    line-height: 42px;
 }
 
-.navbar-brand img{
+.f-36 b {
+    font-weight: 700;
+}
+
+.navbar-brand img {
     max-height: 30px;
     margin-left: 75px;
 }
 
-.navbar .collapse{
-    padding-right: 80px;
+.navbar .collapse {
+    padding-right: 75px;
 }
 
-.navbar .navbar-nav a{
+.navbar .navbar-nav a {
     padding-top: 40px;
     padding-bottom: 40px;
-    padding-left: 20px!important;
-    padding-right: 20px!important;
-    background: #FFEA02;
-    opacity: 0;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
-.navbar .navbar-nav a:hover{
-    opacity: 1;
+.navbar .navbar-nav a:hover {
+    background: #FFEA02;
 }
 
-.carousel img{
+.carousel img {
     max-height: 530px;
+}
+
+.judul-kuning h2{
+    background: #ffea00;
+    padding: 24px;
+    margin: 0;
+    display: inline-block;
+    z-index: 3!important;
+}
+
+.judul-kuning:before {
+    background: rgba(255,234,0,.5);
+    height: 100%!improtant;
+    content: "asdasdasdasdasdasdsa";
+    position: absolute;
+    height: auto;
+    width: 100%;
+    left: 0;
+    z-index: 1!important;
 }
