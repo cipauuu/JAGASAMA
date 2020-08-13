@@ -19,6 +19,9 @@ a:hover {
 
 .f-18 {
     font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 20px;
 }
 
 .f-20 {
@@ -91,7 +94,7 @@ a:hover {
     content: "";
     position: absolute;
     display: block;
-    width: 30%;
+    width: 25%;
     height: 10%;
     left: 0%;
     z-index: -2 !important;
@@ -110,7 +113,7 @@ a:hover {
 
 .judul-kuning h2:before {
     background: black;
-    border-top: 5px solid #dfdfdf;
+    border-top: 4px solid #dfdfdf;
     content: "";
     position: absolute;
     display: block;
@@ -122,4 +125,21 @@ a:hover {
 
 .bg-abu{
     background: #EBECED;
+}
+
+.btn-wa{
+    background: #259b24;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-wa:hover{
+    background: #4B4E53;
+    color: white;
 }
