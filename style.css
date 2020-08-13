@@ -17,10 +17,9 @@ a:hover {
     line-height: 21px;
 }
 
-.f-18 {
+56 .f-18 {
     font-size: 18px;
     font-weight: 300;
-    color: #fff;
     line-height: 20px;
 }
 
@@ -123,11 +122,12 @@ a:hover {
     z-index: -3 !important;
 }
 
-.bg-abu{
+.bg-abu {
     background: #EBECED;
 }
 
-.btn-wa{
+.btn-wa {
+    color: white;
     background: #259b24;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -139,7 +139,42 @@ a:hover {
     transition: all 0.3s ease-in-out;
 }
 
-.btn-wa:hover{
+.btn-wa:hover {
     background: #4B4E53;
     color: white;
+}
+
+.produk .hitam{
+    background :black;
+    padding: 10px;
+    width:100%;
+    height:100%;;
+}
+
+.produk img{
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.produk img:hover{
+    opacity: 0.4;
+}
+
+.produk .judul-produk{
+    bottom: 0;
+    position: absolute;
+    color: #6f6f73;
+    padding: 20px 20px 0 0;
+    line-height: 22px;
+    background: white;
+}
+
+.produk .judul-produk:hover{
+    color: #deae2e;
+}
+
+.keunggulan{
+    color: #7e8082;
 }
