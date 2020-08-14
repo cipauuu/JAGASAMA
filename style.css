@@ -81,7 +81,8 @@ a:hover {
 }
 
 .navbar .navbar-nav a:hover {
-    background: #FFEA02;
+    background: #1D86A6;
+    color: white!important;
 }
 
 .carousel img {
@@ -89,14 +90,15 @@ a:hover {
 }
 
 .judul-kuning h2 {
-    background: #ffea00;
+    color: white;
+    background: #1D86A6;
     padding: 24px;
     margin: 0;
     display: inline-block;
 }
 
 .judul-kuning::before {
-    background: #FFF5A2;
+    background: #67b6ce;
     content: "";
     position: absolute;
     display: block;
@@ -180,7 +182,7 @@ a:hover {
 }
 
 .produk .judul-produk:hover {
-    color: #deae2e;
+    color: #1D86A6;
 }
 
 .keunggulan {
@@ -210,14 +212,14 @@ footer .fa-2 {
 }
 
 .paginationnn {
-    background: #FFF5A2;
+    background: #67b6ce;
 }
 
 .paginationn h2 {
     font-size: 28px;
     font-weight: 300;
-    color: #414146;
-    background: #ffea00;
+    color: white;
+    background: #1D86A6;
     padding: 24px;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -242,7 +244,7 @@ footer .fa-2 {
 }
 
 .sub-paginationn a:hover {
-    color: #DEAF30;
+    color: #1D86A6;
 }
 
 .intro {
@@ -257,7 +259,7 @@ footer .fa-2 {
 .intro .container-fluid {
     padding-top: 100px;
     padding-bottom: 100px;
-    background: rgba(255, 234, 0, 0.73);
+    background: rgba(103, 182, 206, 0.73);
 }
 
 .intro b {
