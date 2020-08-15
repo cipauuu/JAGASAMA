@@ -89,7 +89,7 @@ a:hover {
     max-height: 530px;
 }
 
-.judul-kuning h2 {
+.judul-biru h2 {
     color: white;
     background: #1D86A6;
     padding: 24px;
@@ -97,7 +97,7 @@ a:hover {
     display: inline-block;
 }
 
-.judul-kuning::before {
+.judul-biru::before {
     background: #67b6ce;
     content: "";
     position: absolute;
@@ -108,7 +108,7 @@ a:hover {
     z-index: -2 !important;
 }
 
-.judul-kuning::after {
+.judul-biru::after {
     background: white;
     content: "";
     position: absolute;
@@ -119,7 +119,7 @@ a:hover {
     z-index: -1 !important;
 }
 
-.judul-kuning h2::before {
+.judul-biru h2::before {
     background: black;
     border-top: 4px solid #dfdfdf;
     content: "";
@@ -192,6 +192,10 @@ a:hover {
 footer {
     color: #e3e3e3 !important;
     background: #636A71;
+}
+
+footer a:hover{
+    color: #1D86A6!important;
 }
 
 footer .fa-2 {
@@ -360,7 +364,7 @@ footer .fa-2 {
   width: 2rem;
   height: 1.5rem;
   text-indent: -10000px;
-  margin-top: -16px;
+  margin-top: -30px;
   z-index: 99;
 }
 
