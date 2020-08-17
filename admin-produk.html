@@ -81,8 +81,8 @@
                 font-size: 18px;
             }
         }
-        
-        .btn-info{
+
+        .btn-info {
             letter-spacing: 3px;
         }
 
@@ -157,30 +157,60 @@
 
     <!-- Body -->
     <div class="main">
-        <h1 class="mb-4">Tambah Blog</h1>
+        <b id="add" class="btn btn-info float-right">Tambah</b>
+        <h1 class="mb-3">Produk : Besi</h1>
 
         <form>
-            <div class="form-group">
-                <input class="form-control form-control-lg" placeholder="Judul Blog">
-            </div>
-            <div class="form-group">
-                <input class="form-control form-control-lg" placeholder="Nama Penulis">
+            <div class="form-row mb-2">
+                <div class="col-3">
+                    <label>Barcode</label>
+                </div>
+                <div class="col-6">
+                    <label>Nama Barang</label>
+                </div>
+                <div class="col-2">
+                    <label>Harga</label>
+                </div>
+                <div class="col-1">
+                    Hapus
+                </div>
             </div>
 
-            <textarea name="editor1"></textarea>
-
-            <div class="form-group mt-3">
-                <label>Gambar Blog</label>
-                <input type="file" class="form-control-file">
+            <div class="form-row">
+                <div class="col-3">
+                    <input class="form-control mb-2" value="1000004133">
+                </div>
+                <div class="col-6">
+                    <input class="form-control mb-2" value="TM 5MM X12M BESI BETON">
+                </div>
+                <div class="col-2">
+                    <input class="form-control mb-2" value="23.500">
+                </div>
+                <div class="col-1">
+                    <a href=""><i class="fa fa-ban ml-3 text-danger" aria-hidden="true"></i></a>
+                </div>
             </div>
 
-            <input type="submit" href="" class="btn btn-info btn-lg my-3 float-right" value="Simpan">
+            <input id="sub-title" type="submit" href="" class="btn btn-info btn-lg my-3 float-right" value="Simpan">
         </form>
 
     </div>
     <!-- Body -->
 
 </body>
+
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.0.min.js"></script>
+
+<script type="text/javascript">
+    $(function() {
+        $("#add").click(function() {
+            div = document.createElement('div');
+            $(div).addClass("form-row").append('');
+            $("#sub-title").before(div);
+        });
+    });
+
+</script>
 
 <script>
     /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */

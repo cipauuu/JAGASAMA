@@ -81,8 +81,8 @@
                 font-size: 18px;
             }
         }
-        
-        .btn-info{
+
+        .btn-info {
             letter-spacing: 3px;
         }
 
@@ -157,22 +157,104 @@
 
     <!-- Body -->
     <div class="main">
-        <h1 class="mb-4">Tambah Blog</h1>
+        <h1 class="mb-4">Tambah Jenis Produk</h1>
 
         <form>
-            <div class="form-group">
-                <input class="form-control form-control-lg" placeholder="Judul Blog">
-            </div>
-            <div class="form-group">
-                <input class="form-control form-control-lg" placeholder="Nama Penulis">
+            <div class="form-group mb-">
+                <input class="form-control form-control-lg" placeholder="Nama Jenis Produk">
             </div>
 
-            <textarea name="editor1"></textarea>
+            <div class="form-group">
+                <label>Intro Jenis Produk</label>
+                <textarea name="editor1"></textarea>
+            </div>
 
-            <div class="form-group mt-3">
-                <label>Gambar Blog</label>
+            <div class="form-group my-5">
+                <label>Gambar Panjang</label>
                 <input type="file" class="form-control-file">
             </div>
+
+            <div class="form-group">
+                <label>Detail Jenis Produk</label>
+                <input class="form-control mb-2" placeholder="Sub-judul">
+                <textarea name="editor2"></textarea>
+            </div>
+            
+            <div class="form-group mb-4">
+                <label class="mt-4 mb-0">Gambar Produk</label>
+                <small class="d-block">*Centang untuk mengaktifkan gambar</small>
+            </div>
+            
+            <div class="form-row">
+                <div class="col-6">
+                    <div class="form-check mb-4">
+                        <input class="form-check-input mt-2" type="checkbox" value="" id="gambarSlider1">
+                        <label class="form-check-label mb-2" for="gambarSlider1">
+                            Gambar 1
+                        </label>
+                        <input type="file" class="form-control-file">
+                    </div>
+
+                    <div class="form-check mb-4">
+                        <input class="form-check-input mt-2" type="checkbox" value="" id="gambarSlider2">
+                        <label class="form-check-label mb-2" for="gambarSlider2">
+                            Gambar 2
+                        </label>
+                        <input type="file" class="form-control-file">
+                    </div>
+
+                    <div class="form-check mb-4">
+                        <input class="form-check-input mt-2" type="checkbox" value="" id="gambarSlider3">
+                        <label class="form-check-label mb-2" for="gambarSlider3">
+                            Gambar 3
+                        </label>
+                        <input type="file" class="form-control-file">
+                    </div>
+
+                    <div class="form-check mb-4">
+                        <input class="form-check-input mt-2" type="checkbox" value="" id="gambarSlider4">
+                        <label class="form-check-label mb-2" for="gambarSlider4">
+                            Gambar 4
+                        </label>
+                        <input type="file" class="form-control-file">
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="form-check mb-4">
+                        <input class="form-check-input mt-2" type="checkbox" value="" id="gambarSlider5">
+                        <label class="form-check-label mb-2" for="gambarSlider5">
+                            Gambar 5
+                        </label>
+                        <input type="file" class="form-control-file">
+                    </div>
+
+                    <div class="form-check mb-4">
+                        <input class="form-check-input mt-2" type="checkbox" value="" id="gambarSlider6">
+                        <label class="form-check-label mb-2" for="gambarSlider6">
+                            Gambar 6
+                        </label>
+                        <input type="file" class="form-control-file">
+                    </div>
+
+                    <div class="form-check mb-4">
+                        <input class="form-check-input mt-2" type="checkbox" value="" id="gambarSlider7">
+                        <label class="form-check-label mb-2" for="gambarSlider7">
+                            Gambar 7
+                        </label>
+                        <input type="file" class="form-control-file">
+                    </div>
+
+                    <div class="form-check mb-4">
+                        <input class="form-check-input mt-2" type="checkbox" value="" id="gambarSlider8">
+                        <label class="form-check-label mb-2" for="gambarSlider8">
+                            Gambar 8
+                        </label>
+                        <input type="file" class="form-control-file">
+                    </div>
+                </div>
+            </div>
+
 
             <input type="submit" href="" class="btn btn-info btn-lg my-3 float-right" value="Simpan">
         </form>
@@ -207,7 +289,16 @@
         filebrowserBrowseUrl: '/browser/browse.php',
         filebrowserUploadUrl: '/uploader/upload.php'
     });
-    CKEDITOR.config.height = '500px';
+    CKEDITOR.config.height = '300px';
+
+</script>
+
+<script>
+    CKEDITOR.replace('editor2', {
+        filebrowserBrowseUrl: '/browser/browse.php',
+        filebrowserUploadUrl: '/uploader/upload.php'
+    });
+    CKEDITOR.config.height = '300px';
 
 </script>
 
