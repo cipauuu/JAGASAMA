@@ -81,14 +81,14 @@
                 font-size: 18px;
             }
         }
-        
-        .btn-info{
+
+        .btn-info {
             letter-spacing: 3px;
         }
 
     </style>
 </head>
-    
+
 <body>
 
     <!-- Navbar -->
@@ -120,10 +120,10 @@
             <a href="#">Tambah Produk</a>
             <a href="#">Hapus Produk</a>
             <a href="#">Profil Perusahaan</a>
-            <a href="#">Mengapa Beli?</a>
+            <a href="#">Alasan Membeli</a>
         </div>
 
-        <button class="dropdown-btn">Jenis Produk
+        <button class="dropdown-btn">Edit Produk
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-container">
@@ -144,21 +144,39 @@
             <a href="#">Keunggulan</a>
         </div>
 
-        <button class="dropdown-btn">Footer
-            <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-container">
-            <a href="#">Lokasi</a>
-            <a href="#">Telepon</a>
-            <a href="#">Whatsapp</a>
-        </div>
+        <a href="#">Footer</a>
     </div>
     <!-- Sidebar -->
 
     <!-- Body -->
-    <div class="main text-center">
-        <h1 class="mb-4" style="margin-top: 10vw;">Halaman Admin PT. Jagat Saksana Makmur</h1>
-        <p>Silahkan buat/sunting halaman Website melalui panel di bagian kiri dashboard ini.</p>
+    <div class="main">
+        <h1 class="mb-4">Edit Footer</h1>
+        
+        <form>
+               <div class="form-row">
+               <div class="col-4">
+                   <div class="form-group">
+                       <label>Alamat</label>
+                       <textarea name="editor1" class="form-control" id="exampleFormControlTextarea1"></textarea>
+                   </div>
+               </div>
+               <div class="col-4">
+                   <div class="form-group">
+                       <label>Telepon</label>
+                       <textarea name="editor2" class="form-control" id="exampleFormControlTextarea1"></textarea>
+                   </div>
+               </div>
+               <div class="col-4">
+                   <div class="form-group">
+                       <label>Whatsapp</label>
+                       <textarea name="editor3" class="form-control" id="exampleFormControlTextarea1"></textarea>
+                   </div>
+               </div>
+            </div>
+            
+            <input type="submit" href="" class="btn btn-info btn-lg my-3 float-right" value="Simpan">
+        </form>
+
     </div>
     <!-- Body -->
 
@@ -183,10 +201,31 @@
 
 </script>
 
-<script src="https://cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
+<script src="ckeditor4/ckeditor.js"></script>
 <script>
-    CKEDITOR.replace('editor1');
-    CKEDITOR.config.height = '500px';
+    CKEDITOR.replace('editor1', {
+        filebrowserBrowseUrl: '/browser/browse.php',
+        filebrowserUploadUrl: '/uploader/upload.php'
+    });
+    CKEDITOR.config.height = '300px';
+
+</script>
+
+<script>
+    CKEDITOR.replace('editor2', {
+        filebrowserBrowseUrl: '/browser/browse.php',
+        filebrowserUploadUrl: '/uploader/upload.php'
+    });
+    CKEDITOR.config.height = '300px';
+
+</script>
+
+<script>
+    CKEDITOR.replace('editor3', {
+        filebrowserBrowseUrl: '/browser/browse.php',
+        filebrowserUploadUrl: '/uploader/upload.php'
+    });
+    CKEDITOR.config.height = '300px';
 
 </script>
 

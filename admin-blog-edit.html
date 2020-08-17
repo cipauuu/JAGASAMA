@@ -5,80 +5,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Admin - Museum Adityawarman</title>
+    <title>Admin - PT. Jagat Saksana Makmur</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
     <style>
-        /* Fixed sidenav, full height */
+        body {
+            background: #F6F6F6;
+        }
+
         .sidenav {
             height: 100%;
-            width: 200px;
+            width: 240px;
             position: fixed;
             z-index: 1;
             top: 30px;
             left: 0;
-            background-color: white;
+            background-color: #23272D;
             border-right: 0.1px solid #E0E1E2;
             overflow-x: hidden;
             padding-top: 20px;
         }
 
-        /* Style the sidenav links and the dropdown button */
         .sidenav a,
         .dropdown-btn {
             padding: 6px 8px 6px 16px;
             text-decoration: none;
-            font-size: 20px;
-            color: #818181;
+            font-size: 1.2vw;
+            color: #9fa9b9;
             display: block;
             border: none;
-            background: none;
+            background: #23272D;
             width: 100%;
             text-align: left;
             cursor: pointer;
             outline: none;
         }
 
-        /* On mouse-over */
         .sidenav a:hover,
         .dropdown-btn:hover {
-            color: #000;
+            color: white;
         }
 
-        /* Main content */
+        .dropdown-container a {
+            background: #2A2E36;
+        }
+
         .main {
-            margin-top: 52px;
-            margin-left: 200px;
-            /* Same as the width of the sidenav */
+            margin-top: 70px;
+            margin-left: 240px;
             font-size: 20px;
-            /* Increased text to enable scrolling */
             padding: 0px 10px;
         }
 
-        /* Add an active class to the active dropdown button */
-        .active {
-            background-color: E0E1E2;
-            color: black;
-        }
-
-        /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
         .dropdown-container {
             display: none;
-            background-color: #E0E1E2;
+            background-color: #2A2E36;
             padding-left: 8px;
         }
 
-        /* Optional: Style the caret down icon */
         .fa-caret-down {
             float: right;
             padding-right: 8px;
             padding-top: 5px;
         }
 
-        /* Some media queries for responsiveness */
         @media screen and (max-height: 450px) {
             .sidenav {
                 padding-top: 15px;
@@ -89,36 +82,27 @@
             }
         }
 
-        .artikel {
-            background: #343A3F;
-            color: white;
+        .btn-info {
+            letter-spacing: 3px;
         }
-
-        .artikel:hover {
-            background: #343A3F;
-            color: white;
-        }
-
-        .btn-sm {
-            color: white
-        }
-
+        
         .pagination .page-link {
-            color: #ffc107;
+            color: #17a2b8;
         }
 
         .page-item.active .page-link {
-            background: #ffc107;
-            border-color: #ffc107;
+            background: #17a2b8;
+            border-color: #17a2b8;
         }
+
     </style>
 </head>
 
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-sm-5 col-md-4 mr-0 text-left" href="admin-dashboard.html">Admin - Museum Adityawarman</a>
+    <nav class="navbar navbar-light fixed-top bg-light flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-sm-5 col-md-4 mr-0 text-left" href="admin-dashboard.html"><img src="img/logo.png" style="max-height: 25px" class="mr-3">Admin - PT. Jagat Saksana Makmur</a>
         <ul class="navbar-nav px-3">
             <li class="nav-item text-nowrap">
                 <a class="nav-link" href="#">Sign out</a>
@@ -129,101 +113,95 @@
 
     <!-- Sidebar -->
     <div class="sidenav">
-        <button class="dropdown-btn artikel">Buat Post Baru
+
+        <button class="dropdown-btn">Blog
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-container">
-            <a href="admin-buat-berita.html">Berita Museum</a>
-            <a href="#">Artikel</a>
-            <a href="#">Event</a>
+            <a href="#">Tambah Blog</a>
+            <a href="#">Edit Blog</a>
         </div>
-        
-        <button class="dropdown-btn artikel mt-1">Edit Post Lama
+
+        <button class="dropdown-btn">Produk
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-container">
-            <a href="admin-edit-post-berita.html">Berita Museum</a>
-            <a href="#">Artikel</a>
-            <a href="#">Event</a>
+            <a href="#">Tambah Produk</a>
+            <a href="#">Hapus Produk</a>
+            <a href="#">Profil Perusahaan</a>
+            <a href="#">Mengapa Beli?</a>
         </div>
-        
-        <button class="dropdown-btn">Tambah Koleksi
+
+        <button class="dropdown-btn">Jenis Produk
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-container">
-            <a href="admin-tambah-koleksi-arkeologika.html">Arkeologika</a>
-            <a href="#">Biologika</a>
-            <a href="#">Etnografika</a>
-            <a href="#">Filologika</a>
-            <a href="#">Geologika</a>
-            <a href="#">Historika</a>
-            <a href="#">Teknologika</a>
-            <a href="#">Seni Ukir</a>
-            <a href="#">Seni Rupa</a>
-            <a href="#">Numismatika/Heraldika</a>
-            <a href="#">Keramalogika</a>
+            <a href="#">Besi</a>
+            <a href="#">Semen</a>
         </div>
-        
-        <button class="dropdown-btn">Edit Koleksi
+
+        <a href="#">Logo</a>
+
+        <a href="#">No. Whatsapp</a>
+
+        <button class="dropdown-btn">Home
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-container">
-            <a href="admin-edit-koleksi-arkeologi.html">Arkeologika</a>
-            <a href="#">Biologika</a>
-            <a href="#">Etnografika</a>
-            <a href="#">Filologika</a>
-            <a href="#">Geologika</a>
-            <a href="#">Historika</a>
-            <a href="#">Teknologika</a>
-            <a href="#">Seni Ukir</a>
-            <a href="#">Seni Rupa</a>
-            <a href="#">Numismatika/Heraldika</a>
-            <a href="#">Keramalogika</a>
+            <a href="#">Gambar Slider</a>
+            <a href="#">Keuntungan</a>
+            <a href="#">Keunggulan</a>
         </div>
-        
-        <button class="dropdown-btn">Tentang Kami
+
+        <button class="dropdown-btn">Footer
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-container">
-            <a href="admin-profil.html">Profil</a>
-            <a href="admin-visi-misi.html">Visi & Misi</a>
-            <a href="admin-kurator.html">Kurator</a>
+            <a href="#">Lokasi</a>
+            <a href="#">Telepon</a>
+            <a href="#">Whatsapp</a>
         </div>
-        
-        <a href="admin-kontak.html">Kontak</a>
     </div>
     <!-- Sidebar -->
 
     <!-- Body -->
     <div class="main">
-        <h1 class="mt-5 mb-4">Edit Koleksi Arkeologi</h1>
+        <h1 class="mb-4">Edit Blog</h1>
 
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <th scope="col">Nama Koleksi</th>
+                    <th scope="col">Judul Blog</th>
+                    <th scope="col">Nama Penulis</th>
+                    <th scope="col">Tanggal Update</th>
                     <th scope="col">Opsi</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Gelang Batu</td>
+                    <td>Lorem ipsum dolor sit amet.</td>
+                    <td>Azmi, S.Kom.</td>
+                    <td>13 Maret 2020</td>
                     <td>
-                        <a href="" class="btn btn-warning btn-sm">Edit</a>
+                        <a href="" class="btn btn-info btn-sm">Edit</a>
                         <a href="" class="btn btn-danger btn-sm">Delete</a>
                     </td>
                 </tr>
                 <tr>
-                    <td>Gelang Batu</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
                     <td>
-                        <a href="" class="btn btn-warning btn-sm">Edit</a>
+                        <a href="" class="btn btn-info btn-sm">Edit</a>
                         <a href="" class="btn btn-danger btn-sm">Delete</a>
                     </td>
                 </tr>
                 <tr>
-                    <td>Gelang Batu</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing.</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
                     <td>
-                        <a href="" class="btn btn-warning btn-sm">Edit</a>
+                        <a href="" class="btn btn-info btn-sm">Edit</a>
                         <a href="" class="btn btn-danger btn-sm">Delete</a>
                     </td>
                 </tr>
@@ -232,16 +210,13 @@
 
         <nav aria-label="Page navigation example" class="mt-5">
             <ul class="pagination justify-content-end">
-                <li class="page-item disabled">
-                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Sebelumnya</a>
-                </li>
                 <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">Selanjutnya</a></li>
-                <li class="page-item"><a class="page-link" href="#">Terakhir</a></li>
+                <li class="page-item disabled"><a class="page-link" href="#">2</a></li>
+                <li class="page-item disabled"><a class="page-link" href="#">Selanjutnya</a></li>
+                <li class="page-item disabled"><a class="page-link" href="#">Terakhir</a></li>
             </ul>
         </nav>
+
     </div>
     <!-- Body -->
 
@@ -266,9 +241,12 @@
 
 </script>
 
-<script src="https://cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
+<script src="ckeditor4/ckeditor.js"></script>
 <script>
-    CKEDITOR.replace('editor1');
+    CKEDITOR.replace('editor1', {
+        filebrowserBrowseUrl: '/browser/browse.php',
+        filebrowserUploadUrl: '/uploader/upload.php'
+    });
     CKEDITOR.config.height = '500px';
 
 </script>

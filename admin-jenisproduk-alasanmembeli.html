@@ -81,14 +81,14 @@
                 font-size: 18px;
             }
         }
-        
-        .btn-info{
+
+        .btn-info {
             letter-spacing: 3px;
         }
 
     </style>
 </head>
-    
+
 <body>
 
     <!-- Navbar -->
@@ -120,10 +120,10 @@
             <a href="#">Tambah Produk</a>
             <a href="#">Hapus Produk</a>
             <a href="#">Profil Perusahaan</a>
-            <a href="#">Mengapa Beli?</a>
+            <a href="#">Alasan Membeli</a>
         </div>
 
-        <button class="dropdown-btn">Jenis Produk
+        <button class="dropdown-btn">Edit Produk
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-container">
@@ -144,21 +144,51 @@
             <a href="#">Keunggulan</a>
         </div>
 
-        <button class="dropdown-btn">Footer
-            <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-container">
-            <a href="#">Lokasi</a>
-            <a href="#">Telepon</a>
-            <a href="#">Whatsapp</a>
-        </div>
+        <a href="#">Footer</a>
     </div>
     <!-- Sidebar -->
 
     <!-- Body -->
-    <div class="main text-center">
-        <h1 class="mb-4" style="margin-top: 10vw;">Halaman Admin PT. Jagat Saksana Makmur</h1>
-        <p>Silahkan buat/sunting halaman Website melalui panel di bagian kiri dashboard ini.</p>
+    <div class="main">
+        <h1 class="mb-4">Alasan Membeli</h1>
+
+        <form>
+            <div class="form-group mb-5">
+                <input class="form-control form-control-lg" value="MENGAPA HARUS MEMBELI DI JAGASAMA?">
+            </div>
+
+            <div class="form-row mb-5">
+                <div class="form-group col-6">
+                    <input class="form-control mb-2" value="Bisa Cash on Delivery (COD)">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5">Jadi Anda bisa membayar ketika barang sudah tiba di lokasi / rumah Anda, tanpa perlu pergi ke toko ataupun transfer</textarea>
+                </div>
+                
+                <div class="form-group col-6">
+                    <input class="form-control mb-2" value="Harga Termurah">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5">Terbukti dari terpilihnya kami sebagai penyedia bahan bangunan oleh beberapa kontraktor besar</textarea>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group col-6">
+                    <input class="form-control mb-2" value="Lengkap">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5">Terbukti dari terpilihnya kami sebagai penyedia bahan bangunan oleh beberapa kontraktor besar</textarea>
+                </div>
+                
+                <div class="form-group col-6">
+                    <input class="form-control mb-2" value="Service">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5">Pelayanan yang menyenangkan menjadi prioritas kami. Senyum pelanggan menjadi semangat kami dalam bekerja</textarea>
+                </div>
+            </div>
+            
+            <div class="form-group mt-3">
+                <label>Gambar</label>
+                <input type="file" class="form-control-file">
+            </div>
+
+            <input type="submit" href="" class="btn btn-info btn-lg my-3 float-right" value="Simpan">
+        </form>
+
     </div>
     <!-- Body -->
 
@@ -183,10 +213,13 @@
 
 </script>
 
-<script src="https://cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
+<script src="ckeditor4/ckeditor.js"></script>
 <script>
-    CKEDITOR.replace('editor1');
-    CKEDITOR.config.height = '500px';
+    CKEDITOR.replace('editor1', {
+        filebrowserBrowseUrl: '/browser/browse.php',
+        filebrowserUploadUrl: '/uploader/upload.php'
+    });
+    CKEDITOR.config.height = '300px';
 
 </script>
 

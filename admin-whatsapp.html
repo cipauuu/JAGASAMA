@@ -81,14 +81,14 @@
                 font-size: 18px;
             }
         }
-        
-        .btn-info{
+
+        .btn-info {
             letter-spacing: 3px;
         }
 
     </style>
 </head>
-    
+
 <body>
 
     <!-- Navbar -->
@@ -144,21 +144,22 @@
             <a href="#">Keunggulan</a>
         </div>
 
-        <button class="dropdown-btn">Footer
-            <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-container">
-            <a href="#">Lokasi</a>
-            <a href="#">Telepon</a>
-            <a href="#">Whatsapp</a>
-        </div>
+        <a href="#">Footer</a>
     </div>
     <!-- Sidebar -->
 
     <!-- Body -->
-    <div class="main text-center">
-        <h1 class="mb-4" style="margin-top: 10vw;">Halaman Admin PT. Jagat Saksana Makmur</h1>
-        <p>Silahkan buat/sunting halaman Website melalui panel di bagian kiri dashboard ini.</p>
+    <div class="main">
+        <h1 class="mb-4">Edit Nomor Whatsapp</h1>
+
+        <form action="">
+            <div class="form-group">
+                <input class="form-control form-control-lg" placeholder="Nomor Whatsapp">
+            </div>
+
+            <input type="submit" href="" class="btn btn-info btn-lg my-5 float-right" value="Simpan">
+        </form>
+
     </div>
     <!-- Body -->
 
@@ -183,9 +184,12 @@
 
 </script>
 
-<script src="https://cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
+<script src="ckeditor4/ckeditor.js"></script>
 <script>
-    CKEDITOR.replace('editor1');
+    CKEDITOR.replace('editor1', {
+        filebrowserBrowseUrl: '/browser/browse.php',
+        filebrowserUploadUrl: '/uploader/upload.php'
+    });
     CKEDITOR.config.height = '500px';
 
 </script>
