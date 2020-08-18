@@ -224,4 +224,10 @@
         font-size: 30px;
     }
     
+    
+    
+    .slick-arrow.slick-next{
+        display: none!important;
+    }
+    
 }
