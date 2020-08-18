@@ -114,12 +114,12 @@
         padding-bottom: 50px;
     }
     
-    .slick-arrow.slick-next{
-        display: none!important;
+    .keuntungan .fa{
+        font-size: 35px;
     }
 }
 
-@media (min-width: 320px) and (max-width: 576px) {
+@media (min-width: 300px) and (max-width: 576px) {
 
     nav .menu {
         right: 15vw;
@@ -212,8 +212,16 @@
         padding-bottom: 50px;
     }
     
-    .slick-arrow.slick-next{
-        display: none!important;
+    .btn-hargaproduk{
+        font-size: 4vw;
+    }
+    
+    table{
+        font-size: 3vw!important;
+    }
+    
+    .keuntungan .fa{
+        font-size: 30px;
     }
     
 }
