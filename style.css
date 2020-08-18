@@ -120,7 +120,6 @@ a:hover {
 }
 
 .judul-biru h2::before {
-    background: black;
     border-top: 4px solid #dfdfdf;
     content: "";
     position: absolute;
