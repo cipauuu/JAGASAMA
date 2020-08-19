@@ -97,6 +97,14 @@
         margin-left: 2vw;
     }
     
+    .bawah {
+        margin-top: -8vw;
+    }
+    
+    .blog-foot.bawah {
+        margin-top: 0;
+    }
+    
     .bg-abu .col-md-2 img{
         max-height: 60vw;
     }
@@ -116,6 +124,10 @@
     
     .keuntungan .fa{
         font-size: 35px;
+    }
+    
+    .konten .hitam img{
+        max-height: 45vw;
     }
 }
 
@@ -137,11 +149,12 @@
     .navbar-toggler {
         border-radius: 200vw;
         padding: .55rem .75rem;
-        border: 3px solid transparent;
+        border: 2px solid;
+        border-color: #a3a7ad!important;
     }
 
     .navbar-brand img {
-        max-height: 10vw;
+        max-height: 13vw;
         margin-left: 0;
         padding-top: 1vw;
         padding-bottom: 1vw;
@@ -175,6 +188,7 @@
     }
 
     .bawah {
+        margin-top: -12vw;
         margin-bottom: 20vw;
     }
 
@@ -213,7 +227,7 @@
     }
     
     .btn-hargaproduk{
-        font-size: 4vw;
+        font-size: 3.5vw;
     }
     
     table{
@@ -225,9 +239,17 @@
     }
     
     
-    
     .slick-arrow.slick-next{
         display: none!important;
+    }
+    
+    .konten .hitam img{
+        max-height: 50vw;
+    }
+    
+    .blog-foot.bawah {
+        margin-top: 0;
+        margin-bottom: 0;
     }
     
 }
